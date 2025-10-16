@@ -1,9 +1,8 @@
 #include <stdio.h>
 
-char *s = "\nchar *s = %c%s%c;\n\n int main(){\nprintf(%cinclude <stdio.h>%c);\nprintf(s, 34, 34, 34, s, 34);\nreturn 0;\n}";
+char *s = "#include<stdio.h>%c%cchar *s = %c%s%c;%c%cint main() {%c    printf(s, 10, 10, 34, s, 34, 10, 10, 10, 10, 10);%c    return 0;%c}";
 
 int main() {
-    printf("include <stdio.h>");
-    printf(s, 34, s, 34, 34, 34);
+    printf(s, 10, 10, 34, s, 34, 10, 10, 10, 10, 10);
     return 0;
 }
