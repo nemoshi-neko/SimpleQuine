@@ -1,0 +1,2 @@
+const s = "const s = %s%s%s;%sconsole.log(s, String.fromCharCode(34), s, String.fromCharCode(34), String.fromCharCode(10));";
+console.log(s, String.fromCharCode(34), s, String.fromCharCode(34), String.fromCharCode(10));
